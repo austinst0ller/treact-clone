@@ -3,6 +3,9 @@
 * {
     padding: 0;
     margin: 0;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(226, 232, 240);
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
 }
@@ -23,6 +26,7 @@ html {
 
 h1 {
     font-size: 2.25rem;
+    line-height: 1.25;
 }
 
 a {
@@ -32,7 +36,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -59,6 +63,7 @@ nav {
 .nav__logo {
     font-size: 24px;
     font-weight: 900;
+    letter-spacing: 0.025em;
     text-decoration: none !important;
     padding-bottom: 4px;
     margin: 0 24px 0 0;
@@ -76,7 +81,7 @@ nav {
 .nav__link {
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.025em;
     padding-top: 6px;
     padding-bottom: 4px;
     margin: 0px 1.5rem;
@@ -126,7 +131,6 @@ nav {
 .two__column--input {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -137,7 +141,13 @@ nav {
     text-align: left;
 }
 
-.right__column {
+.right__column-container {
     width: 60%;
+    max-width: 32rem;
+}
+
+.column__inputR-img {
+    width: 100%;
+    min-width: 0px;
     max-width: 32rem;
 }
