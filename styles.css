@@ -128,17 +128,33 @@ nav {
 
 /* LANDING */
 
+.two__column--input-container {
+    width: 100%;
+}
+
 .two__column--input {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
 .left__column {
     display: flex;
-    width: 40%;
+    flex-direction: column;
+    width: 42%;
     text-align: left;
+}
+
+.left__column--heading {
+    font-weight: 700;
+}
+
+.left__column--para {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .right__column-container {
