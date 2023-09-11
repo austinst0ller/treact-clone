@@ -274,7 +274,7 @@ button:hover {
 
 .two__column--input-decoration {
     position: absolute;
-    transform: translateX(-10px) translateY(-38rem);
+    transform: translateX(-10px) translateY(-38.2rem);
     left: 0px;
     bottom: 0px;
     z-index: -10;
@@ -353,8 +353,41 @@ button:hover {
 
 .imageContainer {
     flex-shrink: 0;
-    /* border-radius: 9999px; */
+    height: 66px;
+    border-radius: 9999px;
     border-width: 1px;
     padding: 1.25rem;
-    
+    text-align: center;
+}
+
+.textContainer {
+    /* margin-top: 1rem; */
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.title {
+    margin-top: 1rem;
+    color: #243e63;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.025em;
+}
+
+.description {
+    /* margin-top: 0.25rem */
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(124, 139, 161);
+}
+
+.three__column--decoration {
+    position: absolute;
+    transform: translateX(8rem) translateY(12rem);
+    right: 0px;
+    bottom: 0px;
+    width: 16rem;
+    opacity: 0.25;
 }
