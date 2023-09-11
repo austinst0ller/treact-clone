@@ -391,3 +391,109 @@ button:hover {
     width: 16rem;
     opacity: 0.25;
 }
+
+/* QUALITY */
+
+.two__col--quality-Container {
+    position: relative;
+}
+
+.two__col--qualityW-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1280px;
+    flex-direction: row;
+    /* flex-direction: column; */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    /* padding-top: 5rem; */
+    /* padding-bottom: 5rem; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two__col--quality-Img {
+    width: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.quality__img {
+    border-radius: 0.25rem;
+    border-width: 1px;
+}
+
+.two__col--qualityDecoration {
+    position: absolute;
+    transform: translateX(2.44rem) translateY(2.28rem);
+    right: 0px;
+    bottom: 0px;
+    z-index: -10;
+    height: 5rem;
+    width: 5rem;
+    color: rgb(100, 21, 255);
+    fill: currentColor;
+}
+
+.two__col--qualityText-col {
+    order: -9999;
+    margin-top: 0px;
+    /* margin-top: 4rem */
+    margin-right: 4rem;
+    /* margin-right:3rem */
+    max-width: none;
+}
+
+.two__col--qualityTextContent {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    /* text-align:center; */
+}
+
+.two__col--quality-subheader {
+    text-align: left;
+    margin: 0;
+    font-weight: 700;
+    color: rgb(100, 21, 255);
+    letter-spacing: 0.1em;
+
+}
+
+.two__col--quality-header {
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 900;
+    color: #243e63;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+}
+
+.two__col--quality-description {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124, 139, 161);
+}
+
+.quality__Primary-btn {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    padding: 0.75rem 2rem;
+    color: #f7fafc;
+    background-color: #6415ff;
+    transition: all 300ms ease;
+}
+
+.quality__Primary-btn:hover {
+    background-color: #5011cc;
+}
