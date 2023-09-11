@@ -24,9 +24,9 @@ html {
     color: #6415ff;
 }
 
-h1 {
-    font-size: 2.25rem;
-    line-height: 1.25;
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 a {
@@ -37,12 +37,6 @@ a {
 
 p {
     color: #243e63;
-}
-
-input, button {
-    font-size: 100%;
-    font-weight: 500;
-    line-height: 0.8;
 }
 
 img {
@@ -159,6 +153,8 @@ nav {
 }
 
 .left__column--heading {
+    font-size: 2.25rem;
+    line-height: 1.25;
     font-weight: 700;
 }
 
@@ -168,23 +164,197 @@ nav {
 }
 
 .left__column--actions {
+    position: relative;
+    height: 68px;
+    max-width: 28rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    font-size: 100%;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+    padding-left: 2rem;
     padding-right: 12rem;
-    width: 100%;
+    margin: 0;
     border-width: 2px;
     border-radius: 9999px;
-    padding-left: 2rem;
+    transition: all 300ms ease;
+}
+
+input:hover {
+    border-color: rgb(160, 174, 192);
+}
+
+input::placeholder {
+    color: rgb(202, 206, 213);
+    font-weight: 500;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus-within {
+    border-color: #742cff;
+}
+
+button {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    width: 10rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    color: #f7fafc;
+    background-color: #6415ff;
+    font-size: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+button:hover {
+    background-color: #5011cc;
+}
+
+
+.left__column--CustomerLogos {
+    margin-top: 5rem;
+}
+
+.customer__logo-para {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: rgb(160, 174, 192);
+}
+
+.customer__logo-strip {
+    padding-right: 4rem;
+    margin-top: 1rem;
+    width: 100%;
+    opacity: 0.5;
 }
 
 .right__column {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
     width: 58%;
-    max-width: 32rem;
+    margin-top: 0px;
+    align-self: flex-end;
+}
+
+.right__column--illustration {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .column__inputR-img {
     width: 100%;
     min-width: 0px;
     max-width: 32rem;
+}
+
+.two__column--input-decoration {
+    position: absolute;
+    transform: translateX(-10px) translateY(-38rem);
+    left: 0px;
+    bottom: 0px;
+    z-index: -10;
+    height: 16rem;
+    width: 16rem;
+    opacity: 0.05;
+}
+
+/* FEATURES */
+
+.three__column--features-container {
+    position: relative;
+}
+
+.three__column--features {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1024px;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.three__column--subheader {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.three__column--header {
+    width: 100%;
+    text-align: center;
+    color: #243e63;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+}
+
+.three__column--description {
+    width: 100%;
+    text-align: center;
+    color: #7c8ba1;
+    margin-top: 1rem;
+    max-width: 36rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.625;
+}
+
+.three__column--VerticalSpacer {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.feature__with--sideImg {
+    width: 33.3333%;
+    max-width: 24rem;
+}
+
+.feature__with--sideImg-Card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem 0.5rem;
+    text-align: left;
+}
+
+.imageContainer {
+    flex-shrink: 0;
+    /* border-radius: 9999px; */
+    border-width: 1px;
+    padding: 1.25rem;
+    
 }
