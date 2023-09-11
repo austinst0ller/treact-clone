@@ -39,6 +39,12 @@ p {
     color: #243e63;
 }
 
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -496,4 +502,125 @@ button:hover {
 
 .quality__Primary-btn:hover {
     background-color: #5011cc;
+}
+
+/* GET STARTED */
+
+.two__colWith--steps-container {
+    position: relative;
+}
+
+.two__colWith--steps {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1280px;
+    flex-direction: row;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.steps__Image-col {
+    position: relative;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: none;
+}
+
+.steps__img {
+    border-radius: 0.25rem;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.two__colWith--steps-decoration {
+    position: absolute;
+    left: 50%;
+    right: 0px;
+    bottom: 0px;
+    z-index: -10;
+    height: 5rem;
+    width: 5rem;
+    transform: translateX(-50%) translateY(50%);
+    color: rgb(100, 21, 255);
+    fill: currentColor;
+    opacity: 0.15;
+}
+
+.steps__Text-col {
+    margin-left: 4rem;
+    order: 9999;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 50%;
+    max-width: none;
+}
+
+.two__colText-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.two__colSteps-subheading {
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.two__colSteps-heading {
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 900;
+    color: #243e63;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+}
+
+.two__colSteps-steps {
+    margin-top: 3rem;
+}
+
+.two__colSteps-step {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.two__colStep-number {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(203, 213, 224);
+}
+
+.two__colStep-text {
+    margin-top: 0px;
+    margin-left: 1.5rem;
+}
+
+.two__colStep-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0px;
+    color: #243e63;
+}
+
+.two__colStep-description {
+    margin-top: 0.75rem;
+    max-width: 20rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(113, 128, 150);
 }
