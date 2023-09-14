@@ -1127,3 +1127,13 @@ TESTIMONIALS
     outline: none;
     width: 599px;
 }
+
+.twoCol__wImgAndRating--StarIcon {
+    margin-right: 0.25rem;
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: currentColor;
+    color: rgb(246, 173, 85);
+    vertical-align: middle;
+}
