@@ -1467,3 +1467,157 @@ GET STARTED
     color: rgb(80, 17, 204);
     opacity: 0.5;
 }
+
+/* 
+
+FOOTER
+
+*/
+
+.fiveCol__LinksAndBackground--container {
+    position: relative;
+    margin: -2rem;
+    margin-top: 0px;
+    padding: 6rem 2rem;
+    background-color: rgb(100, 21, 255);
+    color: rgb(247, 250, 252);
+}
+
+.fiveCol__LinksAndBackground-Content {
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+
+.fiveCol__MainColumns {
+    margin-top: -3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.mainCols__column {
+    margin-top: 3rem;
+    padding: 0px 0px;
+    width: auto;
+}
+
+.mainCols__columnHeading {
+    font-weight: 700;
+}
+
+.mainCols__columnList {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.mainCols__LinkList-Item {
+    margin-top: 0.75rem;
+}
+
+.mainCols__Link {
+    border-bottom-width: 2px;
+    border-color: transparent;
+    color: #f7fafc;
+    padding-bottom: 0.25rem;
+    transition: all 300ms;
+}
+.mainCols__Link:hover {
+    border-color: rgb(247, 250, 252);
+}
+
+.footer__divider {
+    margin: 4rem 0;
+    width: 100%;
+    border-bottom-width: 2px;
+    border-color: rgb(116, 44, 255);
+}
+
+.threeRow__Footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.threeRow__LogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.threeRow__LogoImage {
+    width: 2rem;
+}
+.threeRow__LogoText {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.footer__CopyrightNote {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(203, 213, 224);
+}
+
+.footer__SocialLinks-container {
+    margin-top: 0px;
+    display: flex;
+}
+.footer__Social-Link {
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    background-color: rgb(247, 250, 252);
+    color: rgb(26, 32, 44);
+    transition: all 300ms;
+}
+.footer__Social-Link:last-child {
+    margin-right: 0px;
+}
+.footer__Social-Link:hover {
+    background-color: rgb(203, 213, 224);
+}
+.social__LinkIcon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.fiveCol__LinksAndBackground--Decoration-wrapper {
+    position: absolute;
+    inset: 0px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.footer__Decoration1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20rem;
+    width: 20rem;
+    --tw-translate-x: -5rem;
+    --tw-translate-y:-8rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+    color: rgb(80, 17, 204);
+    opacity: 0.5;
+}
+.footer__Decoration2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 20rem;
+    width: 20rem;
+    --tw-translate-x: 8rem;
+    --tw-translate-y: 12rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+    color: rgb(80, 17, 204);
+    opacity: 0.5;
+}
