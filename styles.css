@@ -74,7 +74,6 @@ img {
 }
 
 nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,6 +81,28 @@ nav {
 
 .no-cursor {
     cursor: not-allowed;
+}
+
+/* SECTION GENERICS */
+
+.sectionSubHeading {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.sectionHeading {
+    color: #243e63;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+}
+
+.sectionDescription {
+    color: rgb(124, 139, 161);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.625;
 }
 
 
@@ -338,31 +359,19 @@ FEATURES
 
 .three__column--subheader {
     margin-bottom: 1rem;
-    font-size: 16px;
-    font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
 .three__column--header {
     width: 100%;
     text-align: center;
-    color: #243e63;
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: 0.025em;
 }
 
 .three__column--description {
     width: 100%;
     text-align: center;
-    color: #7c8ba1;
     margin-top: 1rem;
     max-width: 36rem;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625;
 }
 
 .three__column--VerticalSpacer {
@@ -493,30 +502,17 @@ QUALITY
 
 .two__col--quality-subheader {
     text-align: left;
-    margin: 0;
-    font-weight: 700;
-    color: rgb(100, 21, 255);
-    letter-spacing: 0.1em;
-
 }
 
 .two__col--quality-header {
-    font-size: 3rem;
     text-align: left;
     margin-top: 1rem;
-    font-weight: 900;
-    color: #243e63;
     line-height: 1.25;
-    letter-spacing: 0.025em;
 }
 
 .two__col--quality-description {
     margin-top: 1rem;
     text-align: left;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625;
-    color: rgb(124, 139, 161);
 }
 
 .quality__Primary-btn {
@@ -539,7 +535,7 @@ QUALITY
 
 /* 
 
-GET STARTED 
+GET STARTED STEPS
 
 */
 
@@ -606,20 +602,12 @@ GET STARTED
 
 .two__colSteps-subheading {
     text-align: left;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: 0.1em;
 }
 
 .two__colSteps-heading {
-    font-size: 3rem;
     text-align: left;
     margin-top: 1rem;
-    font-weight: 900;
-    color: #243e63;
     line-height: 1.25;
-    letter-spacing: 0.025em;
 }
 
 .two__colSteps-steps {
@@ -713,29 +701,18 @@ VALUES
 }
 
 .two__colValues-subheading {
-    margin: 0px;
-    font-weight: 700;
     text-align: left;
-    letter-spacing: 0.1em;
 }
 
 .two__colValues-heading {
     margin-top: 1rem;
     text-align: left;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #243e63;
     line-height: 1.25;
-    letter-spacing: 0.025em;
 }
 
 .two__colValues-description {
     margin-top: 2rem;
     text-align: left;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625;
-    color: rgb(124, 139, 161);
 }
 
 .two__colValues--features {
@@ -847,28 +824,18 @@ PRICING
 
 .threePlans__subheading {
     margin-bottom: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
 }
 
 .threePlans__heading {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #243e63;
     width: 100%;
-    letter-spacing: 0.025em;
 }
 
 .threePlans__description {
     margin-top: 1rem;
     width: 100%;
     max-width: 36rem;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625;
     text-align: center;
-    color: rgb(124, 139, 161);
 }
 
 .threePlans__Plans-container {
@@ -1094,28 +1061,15 @@ TESTIMONIALS
     max-width: none;
 }
 
-.twoCol__wImgandRating--subheading {
-    font-weight: 700;
-    letter-spacing: 0.1em;
-}
-
 .twoCol__wImgandRating--heading {
     margin-top: 1rem;
     text-align: left;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #243e63;
     width: 100%;
-    letter-spacing: 0.025em;
 }
 
 .twoCol__wImgandRating--description {
     margin-top: 1.5rem;
     text-align: left;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625;
-    color: rgb(124, 139, 161);
 }
 
 .twoCol__wImgandRating--testimonialCard-wrapper {
@@ -1253,19 +1207,13 @@ FAQS
 }
 
 .faqs__subheading {
-    font-weight: 700;
-    letter-spacing: 0.1em;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .faqs__heading {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
     width: 100%;
-    letter-spacing: 0.025em;
-    color: #243e63;
 }
 
 .faqs__description {
@@ -1273,10 +1221,6 @@ FAQS
     width: 100%;
     max-width: 36rem;
     text-align: center;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625;
-    color: rgb(124, 139, 161);
 }
 
 .oneCol__faqs--Content {
@@ -1621,3 +1565,5 @@ FOOTER
     color: rgb(80, 17, 204);
     opacity: 0.5;
 }
+
+/* length was 1631 lines before any optimization */
