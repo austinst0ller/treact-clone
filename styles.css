@@ -1642,13 +1642,54 @@ generic classes for section headings, subheadings, and descriptions only */
     .twoCol__wImgandRating--testimonialCard {
         width: 100%;
     }
+
+    /* GET STARTED */
+    .getStarted__Box-wrapper {
+        margin-bottom: 5rem;
+    }
+    .getStarted__Box {
+        padding: 5rem 0;
+    }
+    .getStarted__backgroundContainer {
+        padding: 5rem 0;
+    }
+    .getStarted__Content-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .getStarted__TextContainer {
+        width: 100%;
+    }
+    .getStarted__LinksContainer {
+        margin-top: 1.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .getStarted__Link {
+        padding: 1rem 2rem;
+    }
 }
 
 @media (max-width: 768px) {
-    /* FEATURES */
-    .three__column--description {
+    /* GENERIC */
+    .sectionDescription {
         font-size: 0.875rem;
+        text-align: center;
     }
+    .sectionSubHeading {
+        text-align: center;
+    }
+    .sectionHeading {
+        text-align: center;
+    }
+
+    /* LANDING */
+    .left__column--para {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    /* FEATURES */
     .feature__with--sideImg {
         width: 100%;
     }
@@ -1673,15 +1714,10 @@ generic classes for section headings, subheadings, and descriptions only */
         text-align: center;
     }
     .two__col--quality-subheader {
-        text-align: center;
+        margin-top: 2rem;
     }
     .two__col--quality-header {
         font-size: 2.25rem;
-        text-align: center;
-    }
-    .two__col--quality-description {
-        font-size: 0.875rem;
-        text-align: center;
     }
 
     /* STEPS */
@@ -1699,6 +1735,12 @@ generic classes for section headings, subheadings, and descriptions only */
         margin-right: auto;
     }
     .two__colText-content {
+        text-align: center;
+    }
+    .two__colSteps-subheading {
+        margin-top: 2rem;
+    }
+    .two__colSteps-heading {
         text-align: center;
     }
     .two__colSteps-step {
@@ -1720,6 +1762,32 @@ generic classes for section headings, subheadings, and descriptions only */
         width: 100%;
         max-width: 28rem;
     }
+    .two__colValues--Textcol {
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: 28rem;
+    }
+    .two__colValues--TextContent {
+        text-align: center;
+    }
+    .two__colValues--features {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 20rem;
+    }
+    .two__colValues-featureCard {
+        margin-top: 2.5rem;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* PRICING */
+    .pricing__Plans {
+        padding: 5rem 0;
+    }
 
     /* TESTIMONIALS */
     .twoCol__wImgandRating--bothColumns {
@@ -1730,6 +1798,45 @@ generic classes for section headings, subheadings, and descriptions only */
         max-width: 28rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    .twoCol__wImgandRating--txtCol {
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 100%;
+        max-width: 28rem;
+    }
+    .twoCol__wImgandRating--testimonialCard-wrapper {
+        text-align: center;
+    }
+
+    /* FAQs */
+    .oneCol__faqs {
+        padding: 5rem 0;
+    }
+    .oneCol__Question-text {
+        font-size: 1.125rem;
+    }
+
+    /* FOOTER */
+    .fiveCol__LinksAndBackground--container {
+        padding: 5rem 2rem;
+    }
+    .fiveCol__MainColumns {
+        justify-content: flex-start;
+    }
+    .mainCols__column {
+        width: 33.3333%;
+    }
+    .threeRow__Footer {
+        flex-direction: column;
+    }
+    .footer__CopyrightNote {
+        margin-top: 2rem;
+    }
+    .footer__SocialLinks-container {
+        margin-top: 2rem;
     }
 
 }
