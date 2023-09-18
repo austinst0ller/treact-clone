@@ -1573,7 +1573,8 @@ FOOTER
     opacity: 0.5;
 }
 
-/* length was 1631 lines before any optimization */
+/* length was 1631 lines before any optimization took about 60 lines off by making 
+generic classes for section headings, subheadings, and descriptions only */
 
 @media (max-width: 1023px) {
     .container {
@@ -1644,6 +1645,10 @@ FOOTER
 }
 
 @media (max-width: 768px) {
+    /* FEATURES */
+    .three__column--description {
+        font-size: 0.875rem;
+    }
     .feature__with--sideImg {
         width: 100%;
     }
@@ -1655,8 +1660,28 @@ FOOTER
     .two__col--quality-Img {
         order: -9999;
         width: 100%;
+        max-width: 28rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    .two__col--qualityText-col {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .two__col--qualityTextContent {
+        max-width: 28rem;
+        text-align: center;
+    }
+    .two__col--quality-subheader {
+        text-align: center;
+    }
+    .two__col--quality-header {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .two__col--quality-description {
+        font-size: 0.875rem;
+        text-align: center;
     }
 
     /* STEPS */
@@ -1665,6 +1690,25 @@ FOOTER
     }
     .steps__Image-col {
         width: 100%;
+        max-width: 28rem;
+    }
+    .steps__Text-col {
+        width: 100%;
+        max-width: 28rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .two__colText-content {
+        text-align: center;
+    }
+    .two__colSteps-step {
+        align-items: center;
+        flex-direction: column;
+    }
+    .two__colStep-text {
+        margin-top: 0.75rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* VALUES */
@@ -1674,6 +1718,7 @@ FOOTER
     .two__colValues--Imagecol {
         order: -9999;
         width: 100%;
+        max-width: 28rem;
     }
 
     /* TESTIMONIALS */
