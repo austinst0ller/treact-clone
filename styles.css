@@ -930,6 +930,9 @@ PRICING
     letter-spacing: 0.1em;
     color: rgb(160, 174, 192);
 }
+.business__duration {
+    color: rgb(237, 242, 247);
+}
 
 .threePlans__PlanFeatures {
     margin-left: -2rem;
@@ -996,6 +999,10 @@ PRICING
 .buyNow__mid-clr {
     background-color: rgb(247, 250, 252);
     color: rgb(100, 21, 255);
+}
+.buyNow__mid-clr:hover {
+    background-color: rgb(226, 232, 240);
+    color: rgb(70, 15, 179);
 }
 
 .buyNow__right-clr {
@@ -1567,3 +1574,63 @@ FOOTER
 }
 
 /* length was 1631 lines before any optimization */
+
+@media (max-width: 1023px) {
+    .container {
+        overflow: hidden;
+    }
+    .nav__links {
+        display: none;
+    }
+    .two__column--input {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left__column--heading {
+        font-size: 1.875rem;
+    }
+    .left__column {
+        width: auto;
+        max-width: 32rem;
+        align-items: center;
+    }
+    .left__column--para {
+        text-align: center;
+    }
+    .right__column {
+        align-self: center;
+    }
+
+    .feature__with--sideImg {
+        width: 50%;
+    }
+
+    .two__colSteps-heading {
+        font-size: 2.25rem;
+    }
+
+    .two__colValues-heading {
+        font-size: 2.25rem;
+    }
+    .two__colValues--features {
+        flex-direction: column;
+    }
+
+    .threePlans__Plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .threePlans__PlanCard {
+        margin-left: 2rem;
+    }
+
+    .twoCol__wImgandRating--heading {
+        font-size: 2.25rem;
+    }
+    .twoCol__wImgandRating--description {
+        font-size: 1rem;
+    }
+    .twoCol__wImgandRating--testimonialCard {
+        width: 100%;
+    }
+}
