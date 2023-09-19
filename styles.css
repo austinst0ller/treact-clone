@@ -1573,22 +1573,29 @@ FOOTER
     opacity: 0.5;
 }
 
-/* length was 1631 lines before any optimization took about 60 lines off by making 
-generic classes for section headings, subheadings, and descriptions only */
-
+/* adding screen size responsiveness */
 @media (max-width: 1023px) {
+    /* GENERIC */
     .container {
         overflow: hidden;
     }
+    .sectionDescription {
+        font-size: 1rem;
+    }
+
     .nav__links {
         display: none;
     }
+
+    /* LANDING */
     .two__column--input {
         flex-direction: column;
         align-items: center;
     }
     .left__column--heading {
+        text-align: center;
         font-size: 1.875rem;
+        margin-top: 1rem;
     }
     .left__column {
         width: auto;
@@ -1596,28 +1603,56 @@ generic classes for section headings, subheadings, and descriptions only */
         align-items: center;
     }
     .left__column--para {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
         text-align: center;
     }
     .left__column--CustomerLogos {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 3rem;
+    }
+    .customer__logo-para {
+        font-size: 0.875rem;
     }
     .customer__logo-strip {
         padding: 0px;
     }
     .right__column {
-        align-self: center;
+        margin-top: 3rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .right__column--illustration {
+        justify-content: center;
     }
 
+    /* FEATURES */
     .feature__with--sideImg {
         width: 50%;
     }
 
-    .two__colSteps-heading {
+    /* QUALITY */
+    .two__col--qualityText-col {
+        margin-right: 3rem;
+    }
+    .two__col--quality-header {
         font-size: 2.25rem;
     }
 
+    /* GET STARTED STEPS */
+    .two__colSteps-heading {
+        font-size: 2.25rem;
+    }
+    .steps__Text-col {
+        margin-left: 3rem;
+    }
+
+    /* VALUES */
+    .two__colValues--Textcol {
+        margin-right: 3rem;
+    }
     .two__colValues-heading {
         font-size: 2.25rem;
     }
@@ -1625,6 +1660,7 @@ generic classes for section headings, subheadings, and descriptions only */
         flex-direction: column;
     }
 
+    /* PRICING */
     .threePlans__Plans-container {
         flex-direction: column;
         align-items: center;
@@ -1633,6 +1669,10 @@ generic classes for section headings, subheadings, and descriptions only */
         margin-left: 2rem;
     }
 
+    /* TESTIMONIALS */
+    .twoCol__wImgandRating--txtCol {
+        padding-left: 3rem;
+    }
     .twoCol__wImgandRating--heading {
         font-size: 2.25rem;
     }
@@ -1667,6 +1707,19 @@ generic classes for section headings, subheadings, and descriptions only */
     }
     .getStarted__Link {
         padding: 1rem 2rem;
+    }
+
+    /* TESTIMONIALS */
+    .twoCol__wImgandRating--CustomerInfo-andControls {
+        margin-top: 2rem;
+    }
+
+    /* FAQs */
+    .oneCol__faqs {
+        padding: 5rem 0;
+    }
+    .oneCol__Question-text {
+        font-size: 1.125rem;
     }
 }
 
@@ -1783,6 +1836,9 @@ generic classes for section headings, subheadings, and descriptions only */
         margin-left: auto;
         margin-right: auto;
     }
+    .two__colValues-featureDescription {
+        text-align: center;
+    }
 
     /* PRICING */
     .pricing__Plans {
@@ -1812,12 +1868,6 @@ generic classes for section headings, subheadings, and descriptions only */
     }
 
     /* FAQs */
-    .oneCol__faqs {
-        padding: 5rem 0;
-    }
-    .oneCol__Question-text {
-        font-size: 1.125rem;
-    }
 
     /* FOOTER */
     .fiveCol__LinksAndBackground--container {
@@ -1842,6 +1892,12 @@ generic classes for section headings, subheadings, and descriptions only */
 }
 
 @media (max-width: 640px) {
+    /* GENERIC */
+    .sectionDescription {
+        font-size: 0.875rem;
+    }
+
+    /* LANDING */
     .left__column--actions {
         flex-direction: column;
     }
@@ -1851,18 +1907,17 @@ generic classes for section headings, subheadings, and descriptions only */
         margin: 1rem 0px;
         position: relative;
     }
-    .customer__logo-para
-
+    .customer__logo-para {
+        margin-top: 2rem;
+    }
     .right__column {
         margin-top: 3rem;
         width: 100%;
     }
 
+    /* FEATURES */
     .three__column--header {
         font-size: 2.25rem;
-    }
-    .three__column--description {
-        font-size: 1rem;
     }
     .feature__with--sideImg-Card {
         flex-direction: column;
@@ -1871,5 +1926,75 @@ generic classes for section headings, subheadings, and descriptions only */
     }
     .textContainer {
         margin-left: 0px;
+    }
+
+    /* GET STARTED STEPS */
+    .getStarted__LinksContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .getStarted__Link {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.5rem;
+        max-width: 9rem;
+        margin: 0px;
+    }
+    .gs__Link-secondary {
+        margin-top: 1rem;
+    }
+
+    /* PRICING */
+    .threePlans__heading {
+        font-size: 2.25rem;
+    }
+    .price {
+        font-size: 2.25rem;
+    }
+
+    /* TESTIMONIALS */
+    .twoCol__wImgandRating--heading {
+        font-size: 1.875rem;
+    }
+    .twoCol__wImgandRating--CustomerInfo-andControls {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .twoCol__wImgandRating--CustomerInfo {
+        flex-direction: column;
+    }
+    .customer__ProfilePic {
+        height: 4rem;
+        width: 4rem;
+    }
+    .customer__InfoText {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+    .twoCol__wImgandRating--Controls {
+        margin-top: 2rem;
+    }
+
+    /* FAQs */
+    .faqs__heading {
+        font-size: 2.25rem;
+    }
+
+    /* GET STARTED */
+    .getStarted__Text {
+        font-size: 1.5rem;
+    }
+
+    /* FOOTER */
+    .fiveCol__MainColumns {
+        text-align: center;
+        justify-content: center;
+    }
+    .mainCols__column {
+        width: auto;
+        padding: 0 1rem;
+    }
+    .footer__CopyrightNote {
+        font-size: 0.875rem;
     }
 }
